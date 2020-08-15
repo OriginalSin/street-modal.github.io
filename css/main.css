@@ -338,3 +338,6 @@ html, body {
       position: absolute;
       left: 2px;
       top: 7px; }
+  .modal_hearth_container .modal_hearth_wrap .event_adress {
+    font: 400 .87rem 'PT Sans', sans-serif;
+    color: #0C56B5; }
