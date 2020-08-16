@@ -277,6 +277,11 @@ html, body {
         position: absolute;
         left: 3px;
         top: 3px; }
+      .modal_hearth_container .modal_hearth_wrap .modal_hearth_info .hearth_info_gps .error::after {
+        content: url(../img/error.svg);
+        position: absolute;
+        left: 3px;
+        top: 3px; }
       .modal_hearth_container .modal_hearth_wrap .modal_hearth_info .hearth_info_gps .warning::after {
         content: url(../img/warning.svg);
         position: absolute;
