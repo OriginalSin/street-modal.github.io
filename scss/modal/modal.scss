@@ -27,7 +27,7 @@ body {
 
 .modal {
     position: fixed;
-    right: 20px;
+    left: 20px;
     top: 20px;
     max-width: 650px;
     width: 650px;
@@ -308,6 +308,14 @@ body {
             }
         }
     }
+    .dtp_event_data {
+        font: bold .87rem "PT Sans", sans-serif;
+        color: #424242;
+        span {
+            font-weight: normal;
+            color: #797979;
+        }
+    }
     .review_id_dtp {
         background: #f5f8fe;
         border-radius: 4px;
@@ -317,11 +325,23 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .street {
             color: #407ED2;
             font: bold .87rem "PT Sans", sans-serif;
+            margin-bottom: 2px;
+        }
+        .info_dtp {
+            font: bold .87rem "PT Sans", sans-serif;
+            margin-bottom: 2px;
+            span {
+                font-weight: normal;
+                color: #000;
+            }
+        }
+        .blue {
+            color: #407ED2;
         }
         .review_id_input {
             position: relative;
@@ -383,11 +403,15 @@ body {
             .zone_error {
                 border-left: 6px solid #999999;
             }
+            .zone_warning {
+                border-left: 6px solid #ffe68b;
+            }
             .review_zone_text {
                 padding-left: 5px;
                 color: #424242;
                 margin-bottom: 5px;
                 font: normal .87rem "PT Sans", sans-serif;
+                margin-top: 5px;
                 span {
                     text-decoration: underline;
                 }
@@ -415,11 +439,15 @@ body {
             max-width: 250px;
             margin-bottom: 5px;
         }
+        .strong {
+            color: #000;
+            font-weight: bold;
+        }
         .batalion_dtp_phone {
             font: bold .87rem "PT Sans", sans-serif;
-            color: #0c56b5;
+            color: #407ED2;
             a {
-                color: #0c56b5;
+                color: #407ED2;
             }
         }
     }
