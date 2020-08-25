@@ -15,13 +15,13 @@
 <body>
     <div class="wrapper">
         <main>
-            <div class="modal modal_hearth active_modal">
+            <div class="modal modal_hearth active_modal"  style="right: 10px; left: auto;">
                 <div class="modal_hearth_container">
                     <div class="modal_title">
                         <p class="modal_title_text">
                             Очаг 012345: <span class="modal_title_type">Столкновения</span>
                         </p>
-                        <img src="img/close.svg" class="close_modal" id="close_modal" alt="close_modal">
+                        <img src="img/close.svg" class="close_modal" alt="close_modal">
                     </div>
                     <div class="modal_hearth_main">
                         <div class="modal_hearth_status">
@@ -219,14 +219,14 @@
                     </div>
                 </div>
             </div>
-            <div class="modal modal_dtp">
+            <div class="modal modal_dtp active_modal">
                 <div class="modal_container_dtp">
                     <div class="modal_title">
                         <p class="modal_title_text">
                             №233411: <span class="modal_title_type">Наезд на пешехода</span>
                         </p>
                         <p class="modal_title_data">05 июля 2020 в 18:53, Воскресенье</p>
-                        <img src="img/close.svg" class="close_modal" id="close_modal" alt="close_modal">
+                        <img src="img/close.svg" class="close_modal" alt="close_modal">
                     </div>
                     <div class="tabs">
 
@@ -475,6 +475,68 @@
                                 <p class="change">Редактировать</p>
                             </div>
                             <input type="text" class="coment_input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal_complex">
+                <div class="modal_container_complex">
+                    <div class="modal_title">
+                        <p class="modal_title_text">
+                            Комплекс: <span class="modal_title_type">AS123414</span>
+                        </p>
+                        <img src="img/close.svg" class="close_modal" alt="close_modal">
+                    </div>
+                </div>
+                <div class="status_complex_wrap">
+                    <div class="status_box_wrap">
+                        <div class="status_accident_box">
+                            <p><span class="accident_title">Аварийность:</span><span class="accident_status down">падает</span></p>
+                            <p><span class="accident_title">Аварийность:</span><span class="accident_status up">растет</span></p>
+                            <p><span class="accident_title">Аварийность:</span><span class="accident_status">неизвестно</span></p>
+                        </div>
+                        <div class="status_violation_box">
+                            <p class="status_violation_renewal">
+                                Обновлено:<span> 13:00</span>
+                            </p>
+                            <div class="status_violation_today violation red">
+                                <p><span>+133</span> Нарушений сегодня</p>
+                            </div>
+                            <div class="status_violation_today violation green">
+                                <p><span>+133</span> Нарушений сегодня</p>
+                            </div>
+                            <div class="status_violation_today violation yellow">
+                                <p><span>+133</span> Нарушений сегодня</p>
+                            </div>
+                            <div class="status_yesterday_today violation gray">
+                                <p>Нет нарушений</p>
+                            </div>
+                            <div class="status_rait_box">
+                                <p class="plane">План: <span>155</span></p>
+                                <p class="raite">Рейтинг: <span>390</span></p>
+                                <a href="#" class="details">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status_box_adress">
+                        <div class="status_adress_wrap">
+                            <p class="status_adress_title">С 20 мая 2020 по адресу</p>
+                            <p class="adress">97 км + 922, в МСК</p>
+                            <p class="road">Дорага: <span>M-9 "Балтия"</span></p>
+                            <p class="paketaw">Пикетаж: <span>97 км + 922 м</span></p>
+                            <div class="status_panel_box">
+                                <div class="input_panel ok">
+                                    <input type="text" value="55.23142.234235" readonly>
+                                </div>
+                                <a href="#" class="status_panel_btn file"></a>
+                                <a href="#" class="status_panel_btn history"></a>
+                                <a href="#" class="status_panel_btn edit"></a>
+                            </div>
+                        </div>
+                        <div class="status_box_coll">
+                            <p class="rubeg">Рубеж 2885</p>
+                            <p class="ohag">Очаг 2885</p>
+                            <p class="dtp">ДТП 2452</p>
                         </div>
                     </div>
                 </div>

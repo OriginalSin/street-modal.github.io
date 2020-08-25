@@ -929,3 +929,267 @@ body {
         }
     }
 }
+
+
+.modal_complex {
+    width: 720px;
+    .modal_title {
+        padding: 15px 20px;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .modal_title_text {
+            color: #0c56b5;
+            margin-bottom: 25px;
+            font: normal .87rem "PT Sans", sans-serif;
+            .modal_title_type {
+                text-transform: uppercase;
+                font: bold 1.2rem "PT Sans", sans-serif;
+                text-transform: uppercase;
+            }
+        }
+        .close_modal {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+    .status_complex_wrap {
+        display: grid;
+        grid-template-columns: 270px 2fr;
+        grid-gap: 20px;
+        padding: 20px;
+        .status_accident_box {
+            margin-bottom: 15px;
+            .accident_title {
+                color: #D14609;
+                font: bold 1rem "PT Sans", sans-serif;
+                border-left: 6px solid #D14609;
+                padding-left: 5px;
+            }
+            .accident_status {
+                font: normal 1rem "PT Sans", sans-serif;
+                padding-left: 3px;
+                position: relative;
+            }
+            .down {
+                &::after {
+                    content: url(../img/complex/down.svg);
+                    position: absolute;
+                    left: 105%;
+                    top: 4px;
+                }
+            }
+            .up {
+                &::after {
+                    content: url(../img/complex/up.svg);
+                    position: absolute;
+                    left: 105%;
+                    top: 4px;
+                }
+            }
+        }
+        .status_violation_box {
+            .status_violation_renewal {
+                font: normal .75rem "PT Sans", sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .violation {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 4px;
+                margin-bottom: 3px;
+                background: #F5F8FE;
+                border-radius: 4px;
+                font: normal 1rem "PT Sans", sans-serif;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .red {
+                background: rgba(238, 44, 65, .6);
+            }
+            .green {
+                background: rgba(73, 156, 108, .6);
+            }
+            .yellow {
+                background: rgba(255, 214, 62, .6);
+            }
+            .gray {
+                font: bold 1.2rem "PT Sans", sans-serif;
+                background: #D6D6D6;
+                text-align: center;
+                color: #424242;
+            }
+            .status_rait_box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 10px;
+                .raite {
+                    margin-left: 5px;
+                    margin-right: auto;
+                    font: normal .87rem "PT Sans", sans-serif;
+                    color: #D14609;
+                    span {
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+                }
+                .plane {
+                    font: normal .87rem "PT Sans", sans-serif;
+                    color: #424242;
+                    span {
+                        font-weight: bold;
+                        font-size: 1rem;
+                    }
+                }
+                .details {
+                    font: normal .75rem "PT Sans", sans-serif;
+                    color: #797979;
+                    padding: 5px 20px;
+                    border: .5px solid #AADCFB;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    transition: .3s;
+                    &:hover {
+                        background: #AADCFB;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .status_adress_wrap {
+            padding: 10px;
+            background: #FDFDFD;
+            border: .5px solid #D6D6D6;
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            .status_adress_title {
+                font: normal 1rem "PT Sans", sans-serif;
+                margin-bottom: 15px;
+            }
+            .adress {
+                font: bold .87rem "PT Sans", sans-serif;
+            }
+            .road {
+                font: normal .87rem "PT Sans", sans-serif;
+                span {
+                    color: #407ED2;
+                    font-weight: bold;
+                }
+            }
+            .paketaw {
+                font: normal .87rem "PT Sans", sans-serif;
+                margin-bottom: 10px;
+                span {
+                    font-weight: bold;
+                }
+            }
+            .status_panel_box {
+                display: flex;
+                position: relative;
+                .ok {
+                    &::after {
+                        content: url(../img/ok.svg);
+                        position: absolute;
+                        left: 3px;
+                        top: 3px;
+                    }
+                }
+                .error {
+                    &::after {
+                        content: url(../img/error.svg);
+                        position: absolute;
+                        left: 3px;
+                        top: 3px;
+                    }
+                }
+                .warning {
+                    &::after {
+                        content: url(../img/warning.svg);
+                        position: absolute;
+                        left: 3px;
+                        top: 2px;
+                    }
+                }
+                input {
+                    outline: none;
+                    background: #fff;
+                    border: 1px dashed #aadcfb;
+                    width: 100px;
+                    padding: 3px 3px 3px 20px;
+                    font: bold .75rem "PT Sans", sans-serif;
+                    overflow: hidden;
+                    border-radius: 3px;
+                }
+            }
+            .status_panel_btn {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 18px;
+                width: 18px;
+                padding: 2px;
+                border: .5px solid #D6D6D6;
+                border-radius: 4px;
+                margin: 0 2.5px;
+                transition: .2s;
+                &:hover {
+                    transform: translateY(-3px);
+                }
+            }
+            .file {
+                margin-left: 5px;
+                &::after {
+                    content: url(../img/complex/file.svg);
+                    position: absolute;
+                    display: block;
+                    top: 2px;
+                }
+            }
+            .history {
+                &::after {
+                    content: url(../img/complex/history.svg);
+                    position: absolute;
+                    display: block;
+                    top: 1px;
+                }
+            }
+            .edit {
+                &::after {
+                    content: url(../img/complex/edit.svg);
+                    position: absolute;
+                    display: block;
+                    top: 2px;
+                }
+            }
+        }
+        .status_box_coll {
+            display: flex;
+            p,a {
+                text-decoration: underline;
+                margin-right: 10px;
+                font: bold .9rem "PT Sans", sans-serif;
+            }
+            .rubeg {
+                color: #0C56B5;
+            }
+            .ohag, .dtp {
+                color: #D10C16;
+            }
+        }
+    }
+}

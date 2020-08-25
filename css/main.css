@@ -901,3 +901,245 @@ body {
     .modal_hearth_container .modal_hearth_wrap .event_adress {
       font: 400 0.87rem "PT Sans", sans-serif;
       color: #0c56b5; }
+
+.modal_complex {
+  width: 720px; }
+  .modal_complex .modal_title {
+    padding: 15px 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .modal_complex .modal_title .modal_title_text {
+      color: #0c56b5;
+      margin-bottom: 25px;
+      font: normal .87rem "PT Sans", sans-serif; }
+      .modal_complex .modal_title .modal_title_text .modal_title_type {
+        text-transform: uppercase;
+        font: bold 1.2rem "PT Sans", sans-serif;
+        text-transform: uppercase; }
+    .modal_complex .modal_title .close_modal {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer; }
+  .modal_complex .status_complex_wrap {
+    display: grid;
+    grid-template-columns: 270px 2fr;
+    grid-gap: 20px;
+    padding: 20px; }
+    .modal_complex .status_complex_wrap .status_accident_box {
+      margin-bottom: 15px; }
+      .modal_complex .status_complex_wrap .status_accident_box .accident_title {
+        color: #D14609;
+        font: bold 1rem "PT Sans", sans-serif;
+        border-left: 6px solid #D14609;
+        padding-left: 5px; }
+      .modal_complex .status_complex_wrap .status_accident_box .accident_status {
+        font: normal 1rem "PT Sans", sans-serif;
+        padding-left: 3px;
+        position: relative; }
+      .modal_complex .status_complex_wrap .status_accident_box .down::after {
+        content: url(../img/complex/down.svg);
+        position: absolute;
+        left: 105%;
+        top: 4px; }
+      .modal_complex .status_complex_wrap .status_accident_box .up::after {
+        content: url(../img/complex/up.svg);
+        position: absolute;
+        left: 105%;
+        top: 4px; }
+    .modal_complex .status_complex_wrap .status_violation_box .status_violation_renewal {
+      font: normal .75rem "PT Sans", sans-serif;
+      text-align: center;
+      margin-bottom: 5px; }
+      .modal_complex .status_complex_wrap .status_violation_box .status_violation_renewal span {
+        font-weight: bold; }
+    .modal_complex .status_complex_wrap .status_violation_box .violation {
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 4px;
+      margin-bottom: 3px;
+      background: #F5F8FE;
+      border-radius: 4px;
+      font: normal 1rem "PT Sans", sans-serif; }
+      .modal_complex .status_complex_wrap .status_violation_box .violation span {
+        font-weight: bold; }
+    .modal_complex .status_complex_wrap .status_violation_box .red {
+      background: rgba(238, 44, 65, 0.6); }
+    .modal_complex .status_complex_wrap .status_violation_box .green {
+      background: rgba(73, 156, 108, 0.6); }
+    .modal_complex .status_complex_wrap .status_violation_box .yellow {
+      background: rgba(255, 214, 62, 0.6); }
+    .modal_complex .status_complex_wrap .status_violation_box .gray {
+      font: bold 1.2rem "PT Sans", sans-serif;
+      background: #D6D6D6;
+      text-align: center;
+      color: #424242; }
+    .modal_complex .status_complex_wrap .status_violation_box .status_rait_box {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 10px; }
+      .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .raite {
+        margin-left: 5px;
+        margin-right: auto;
+        font: normal .87rem "PT Sans", sans-serif;
+        color: #D14609; }
+        .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .raite span {
+          font-weight: bold;
+          font-size: 1rem; }
+      .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .plane {
+        font: normal .87rem "PT Sans", sans-serif;
+        color: #424242; }
+        .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .plane span {
+          font-weight: bold;
+          font-size: 1rem; }
+      .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .details {
+        font: normal .75rem "PT Sans", sans-serif;
+        color: #797979;
+        padding: 5px 20px;
+        border: .5px solid #AADCFB;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        border-radius: 4px;
+        text-decoration: none;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+        .modal_complex .status_complex_wrap .status_violation_box .status_rait_box .details:hover {
+          background: #AADCFB;
+          color: #000; }
+    .modal_complex .status_complex_wrap .status_adress_wrap {
+      padding: 10px;
+      background: #FDFDFD;
+      border: .5px solid #D6D6D6;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-radius: 4px;
+      margin-bottom: 12px; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .status_adress_title {
+        font: normal 1rem "PT Sans", sans-serif;
+        margin-bottom: 15px; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .adress {
+        font: bold .87rem "PT Sans", sans-serif; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .road {
+        font: normal .87rem "PT Sans", sans-serif; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .road span {
+          color: #407ED2;
+          font-weight: bold; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .paketaw {
+        font: normal .87rem "PT Sans", sans-serif;
+        margin-bottom: 10px; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .paketaw span {
+          font-weight: bold; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box .ok::after {
+          content: url(../img/ok.svg);
+          position: absolute;
+          left: 3px;
+          top: 3px; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box .error::after {
+          content: url(../img/error.svg);
+          position: absolute;
+          left: 3px;
+          top: 3px; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box .warning::after {
+          content: url(../img/warning.svg);
+          position: absolute;
+          left: 3px;
+          top: 2px; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_box input {
+          outline: none;
+          background: #fff;
+          border: 1px dashed #aadcfb;
+          width: 100px;
+          padding: 3px 3px 3px 20px;
+          font: bold .75rem "PT Sans", sans-serif;
+          overflow: hidden;
+          border-radius: 3px; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_btn {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 18px;
+        width: 18px;
+        padding: 2px;
+        border: .5px solid #D6D6D6;
+        border-radius: 4px;
+        margin: 0 2.5px;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .status_panel_btn:hover {
+          -webkit-transform: translateY(-3px);
+              -ms-transform: translateY(-3px);
+                  transform: translateY(-3px); }
+      .modal_complex .status_complex_wrap .status_adress_wrap .file {
+        margin-left: 5px; }
+        .modal_complex .status_complex_wrap .status_adress_wrap .file::after {
+          content: url(../img/complex/file.svg);
+          position: absolute;
+          display: block;
+          top: 2px; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .history::after {
+        content: url(../img/complex/history.svg);
+        position: absolute;
+        display: block;
+        top: 1px; }
+      .modal_complex .status_complex_wrap .status_adress_wrap .edit::after {
+        content: url(../img/complex/edit.svg);
+        position: absolute;
+        display: block;
+        top: 2px; }
+    .modal_complex .status_complex_wrap .status_box_coll {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .modal_complex .status_complex_wrap .status_box_coll p, .modal_complex .status_complex_wrap .status_box_coll a {
+        text-decoration: underline;
+        margin-right: 10px;
+        font: bold .9rem "PT Sans", sans-serif; }
+      .modal_complex .status_complex_wrap .status_box_coll .rubeg {
+        color: #0C56B5; }
+      .modal_complex .status_complex_wrap .status_box_coll .ohag, .modal_complex .status_complex_wrap .status_box_coll .dtp {
+        color: #D10C16; }
