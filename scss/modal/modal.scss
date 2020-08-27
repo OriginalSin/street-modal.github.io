@@ -69,6 +69,7 @@ body {
     .modal_container_dtp {
         height: 750px;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
     .modal_dtp_coment_box {
         padding: 15px 20px;
@@ -609,6 +610,7 @@ body {
 .modal_hearth_container {
     height: 750px;
     overflow-y: scroll;
+    overflow-x: hidden;
     .modal_title {
         padding: 15px 20px;
         width: 100%;
@@ -930,12 +932,14 @@ body {
     }
 }
 
-
 .modal_complex {
     width: 760px;
+    position: relative;
     .modal_main {
         overflow-y: scroll;
         height: 800px;
+        overflow-x: hidden;
+        position: relative;
     }
     .modal_title {
         padding: 15px 20px;
@@ -946,6 +950,21 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        .back_slider {
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 22px;
+            color: #5694E8;
+            font: bold .7rem "PT Sans", sans-serif;
+            padding-left: 15px;
+            cursor: pointer;
+            img {
+                position: absolute;
+                left: 0;
+                top: -1px;
+            }
+        }
         .modal_title_text {
             color: #0c56b5;
             margin-bottom: 25px;
@@ -958,9 +977,21 @@ body {
         }
         .close_modal {
             position: absolute;
-            right: 10px;
-            top: 10px;
+            right: 15px;
+            top: 15px;
             cursor: pointer;
+        }
+    }
+    .complex_slider_wrap {
+        overflow: hidden;
+        display: none;
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        .slider_tab .slider-for img{
+            height: 400px;
+            width: 100%;
         }
     }
     .status_complex_wrap {
@@ -1210,8 +1241,8 @@ body {
             overflow: hidden;
             &:hover {
                 .cart_img {
-                    img {
-                        transform: scale(1.1);
+                    .cart_photo {
+                        transform: scale(1.075);
                     }
                 }
             }
@@ -1225,6 +1256,7 @@ body {
             border: 3px solid #D9E5F6;
             box-sizing: border-box;
             border-radius: 4px;
+            padding: 60px 0 90px 0;
             img {
                 margin-bottom: 15px;
                 max-width: 100%;
@@ -1241,10 +1273,46 @@ body {
             height: 170px;
             overflow: hidden;
             margin-bottom: 5px;
-            img {
+            position: relative;
+            .cart_photo {
                 max-width: 100%;
                 height: 100%;
                 transition: .4s;
+            }
+            .zoom_cart {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+        .fixation {
+            &::after {
+                content: '';
+                height: 10px;
+                width: 10px;
+                background: #499C6C;
+                display: block;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                border-radius: 50%;
+            }
+        }
+        .none_fixation {
+            &::after {
+                content: '';
+                height: 10px;
+                width: 10px;
+                background: #D10C16;
+                display: block;
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                border-radius: 50%;
             }
         }
         .none_save {
@@ -1298,7 +1366,7 @@ body {
             .cart_week {
                 color: #EE2C41;
                 font: normal .75rem "PT Sans", sans-serif;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
             .cart_location {
                 font: bold .87rem "PT Sans", sans-serif;
