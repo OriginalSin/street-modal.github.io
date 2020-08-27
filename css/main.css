@@ -31,10 +31,20 @@ body {
   background: #fff;
   -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: none; }
+  .modal ::-webkit-scrollbar {
+    width: 7px;
+    height: 6px;
+    background: transparent; }
+  .modal ::-webkit-scrollbar-thumb {
+    background-color: #D6D6D6;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); }
 
 .active_modal {
   opacity: 1;
@@ -46,16 +56,6 @@ body {
 
 .tabs__content.active {
   display: block; }
-
-.modal ::-webkit-scrollbar {
-  width: 7px;
-  height: 6px;
-  background: transparent; }
-
-.modal ::-webkit-scrollbar-thumb {
-  background-color: #D6D6D6;
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); }
 
 .modal_dtp {
   max-width: 680px;
@@ -905,13 +905,11 @@ body {
       color: #0c56b5; }
 
 .modal_complex {
-  width: 760px;
-  position: relative; }
+  width: 760px; }
   .modal_complex .modal_main {
     overflow-y: scroll;
     height: 800px;
-    overflow-x: hidden;
-    position: relative; }
+    overflow-x: hidden; }
   .modal_complex .modal_title {
     padding: 15px 20px;
     width: 100%;
