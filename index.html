@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/dropzone.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -20,8 +21,7 @@
                     <div class="modal_container_complex">
                         <div class="modal_title">
                             <p class="back_slider">
-                                <img src="img/complex/left.svg" alt="left">
-                                Назад
+                                <img src="img/complex/left.svg" alt="left"> Назад
                             </p>
                             <p class="modal_title_text">
                                 Комплекс: <span class="modal_title_type">AS123414</span>
@@ -270,7 +270,7 @@
                             <div class="batalion_box">
                                 <p class="batalion_title">Батальон</p>
                                 <p class="light">1-й спецвыпуск</p>
-                                <p class="strong">Ярославский ш2</p> 
+                                <p class="strong">Ярославский ш2</p>
                                 <p class="number_degur">Дежурная часть +3123124152</p>
                             </div>
                             <div class="exploitation_box">
@@ -281,12 +281,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="complex_add_photo">
+                        <img src="img/close.svg" class="close_add_photo" alt="close">
+                        <form id="upload_container" class="dropzone" enctype="multipart/form-data">
+                            <p class="title">Нет фото</p>
+                            <p class="output_fiel"></p>
+                            <div class="dz-default dz-message">
+                                <button class="dz-button" type="button">Добавить</button>
+                            </div>
+                            <span class="hint">или перетащите сюда</span>
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/dropzone.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 
