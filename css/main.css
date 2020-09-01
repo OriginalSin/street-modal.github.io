@@ -1091,6 +1091,12 @@ body {
       background: #D6D6D6;
       text-align: center;
       color: #424242; }
+    .modal_complex .status_complex_wrap .status_violation_box .none_data {
+      font: bold 1.2rem "PT Sans", sans-serif;
+      background: #D6D6D6;
+      text-align: center;
+      color: #424242;
+      background: rgba(255, 214, 62, 0.6); }
     .modal_complex .status_complex_wrap .status_violation_box .status_rait_box {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1511,6 +1517,15 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding-bottom: 20px; }
+    .modal_complex .batalion_complex_wrap .kode_zone {
+      color: #424242;
+      font: bold .87rem "PT Sans", sans-serif;
+      margin-bottom: 5px; }
+    .modal_complex .batalion_complex_wrap .coll_polos_title {
+      font: normal 1rem "PT Sans", sans-serif;
+      margin-bottom: 3px; }
+    .modal_complex .batalion_complex_wrap .coll_polos_text {
+      font: bold 1rem "PT Sans", sans-serif; }
     .modal_complex .batalion_complex_wrap .batalion_title {
       font: bold 1rem "PT Sans", sans-serif;
       color: #424242;
@@ -1538,6 +1553,96 @@ body {
       color: #407ED2; }
       .modal_complex .batalion_complex_wrap .number_degur a {
         color: #407ED2; }
+  .modal_complex .rubew_arhive {
+    max-width: 620px;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px; }
+    .modal_complex .rubew_arhive .rubew_arhive_work {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px; }
+    .modal_complex .rubew_arhive .arhive_title {
+      position: relative;
+      font: normal 1rem "PT Sans", sans-serif;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .modal_complex .rubew_arhive .arhive_title span {
+        padding: 2px;
+        border-radius: 50%;
+        position: relative;
+        top: -5px;
+        height: 12px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 12px;
+        right: -4px;
+        background: #AADCFB;
+        font: normal .75rem "PT Sans", sans-serif; }
+    .modal_complex .rubew_arhive .disabled_title span {
+      background: #D6D6D6; }
+    .modal_complex .rubew_arhive .arhive_item {
+      text-transform: uppercase;
+      font: bold .8rem "PT Sans", sans-serif;
+      padding: 5px 10px;
+      background: #0C56B5;
+      border-radius: 4px;
+      color: #fff;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .modal_complex .rubew_arhive .medium {
+      color: #424242;
+      background: transparent;
+      border: 1px solid #0C56B5;
+      text-decoration: underline; }
+    .modal_complex .rubew_arhive .disabled {
+      color: #8d8d8d;
+      background: transparent;
+      border: 1px solid #8d8d8d;
+      text-decoration: underline; }
+  .modal_complex .batalion_complex_wrap_rubew {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 270px 2fr;
+    grid-gap: 20px;
+    position: relative;
+    padding: 0 20px 15px 20px; }
+    .modal_complex .batalion_complex_wrap_rubew:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #D6D6D6; }
   .modal_complex .complex_laws_wrap {
     margin-bottom: 20px;
     display: grid;
