@@ -975,6 +975,20 @@ body {
       width: 16px;
       cursor: pointer;
       margin-bottom: 10px; }
+    .modal_complex .details_modal_wrap .download {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      border: 0.5px solid #D9E5F6;
+      font: normal .87rem "PT Sans", sans-serif;
+      color: #5694E8; }
+      .modal_complex .details_modal_wrap .download img {
+        position: relative;
+        left: -1px;
+        top: 1px; }
     .modal_complex .details_modal_wrap .details_table_wrap {
       max-width: 420px;
       margin: 0 auto;
@@ -1030,6 +1044,7 @@ body {
               position: absolute;
               z-index: -2; }
             .modal_complex .details_modal_wrap .details_table_wrap .details_panel_wrap .details_panel_container .cutom_radio_wrap .custom_radio_2 label {
+              cursor: pointer;
               font: normal .87rem "PT Sans", sans-serif;
               text-align: center;
               padding: 4px 10px;
@@ -1097,6 +1112,38 @@ body {
               content: "\2193";
               position: absolute;
               right: 0; }
+      .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+        padding: 10px 30px; }
+        .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap .title_xl_details {
+          margin-bottom: 5px;
+          font: bold 1.125rem "PT Sans", sans-serif; }
+        .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap .red {
+          color: #D14609; }
+        .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap .title_sm_details {
+          margin-bottom: 5px;
+          color: #424242;
+          font: bold .87rem "PT Sans", sans-serif; }
+        .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap .details_box_sm {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin-bottom: 3px; }
+          .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap .details_box_sm p {
+            font: normal 1rem "PT Sans", sans-serif; }
+          .modal_complex .details_modal_wrap .details_table_wrap .details_info_wrap .details_box_sm p:last-child {
+            font-weight: bold; }
   .modal_complex .complex_slider_wrap {
     overflow: hidden;
     display: none;
