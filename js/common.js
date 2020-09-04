@@ -139,6 +139,19 @@ $(".close_add_photo").on("click", function() {
     $(".complex_add_photo").hide();
 });
 
+$(".close_details").on("click", function() {
+    $(".details_modal_wrap").hide();
+});
+
+$(".details").on("click", function() {
+    $(".details_modal_wrap").show();
+});
+
+$(".custom_radio_2 label").on("click", function() {
+    $(".custom_radio_2 label").removeClass("custom_active");
+    $(this).addClass("custom_active");
+});
+
 var myDropzone = new Dropzone(".dropzone", {
     url: "/file/post",
     accept: function(file, done) {
